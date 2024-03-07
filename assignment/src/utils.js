@@ -8,7 +8,7 @@ export const handleOrder = async (orderType,obj,cookies) => {
       if(!obj?.securityId) toast.error("Security Id is mandatory")
       return
     }
-    const url = "/backend/api/orders";
+    const url = "https://api.dhan.co/orders";
     const bodyObject = {
       dhanClientId: "1000475514",
       correlationId: "NA",
