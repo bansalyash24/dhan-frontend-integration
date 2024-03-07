@@ -7,7 +7,7 @@ function Positions() {
   const [isLoading,setLoading]=useState(true)
   const [cookies]=useCookies()
   const getPositions = async () => {
-    const url = "/api/positions";
+    const url = "https://api.dhan.co/positions";
     const options = {
       method: "GET",
       headers: {
