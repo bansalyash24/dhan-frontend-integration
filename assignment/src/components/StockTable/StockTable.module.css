@@ -1,0 +1,96 @@
+.stockTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stockTable th,
+.stockTable td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.stockTable th {
+  background-color: orangered; 
+  color: white;
+}
+
+.negativeVal {
+  color: red;
+  font-weight: bold;
+}
+
+.positiveVal {
+  color: green;
+  font-weight: bold;
+}
+
+.positionClosed {
+  background-color: rgb(238, 238, 238)
+}
+
+.inputField {
+  margin: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.buyBtn {
+  margin: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #4caf50; 
+  color: white;
+}
+
+.sellBtn {
+  margin: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+}
+
+
+.noPositions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableHead{
+  font-weight:bolder;
+}
+
+.shimmerRow {
+  background:lightgray;
+  background-size: 300% 100%; 
+  animation: shimmer 2.5s infinite linear;
+  border-radius: 4px; 
+}
+
+.positionOpened:hover{
+  background-color:lightgrey;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
