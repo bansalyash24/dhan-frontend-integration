@@ -7,7 +7,7 @@ function Positions() {
   const [isLoading,setLoading]=useState(true)
   const [cookies]=useCookies()
   const getPositions = async () => {
-    const url = "https://easy-teal-salmon-belt.cyclic.app/api/positions";
+    const url = `${import.meta.env.VITE_BACKEND_URL}/api/positions`;
     const options = {
       method: "GET",
       headers: {
