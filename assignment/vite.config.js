@@ -9,14 +9,14 @@ export default defineConfig({
     port:3000,
     proxy: {
       '/api': {
-        target: 'https://api.dhan.co/',
+        target: import.meta.env.DHAN_URL,
         changeOrigin: true,
         secure:false,
         ws: true,
         rewrite: (path) => path.replace(/^\/api/, "")
       },
       '/backend':{
-        target: 'http://localhost:5000/',
+        target: import.meta.env.BACKEND_URL,
         changeOrigin: true,
         secure:false,
         ws: true,
