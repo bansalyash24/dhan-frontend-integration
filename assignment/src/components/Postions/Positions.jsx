@@ -7,7 +7,7 @@ function Positions() {
   const [isLoading,setLoading]=useState(true)
   const [cookies]=useCookies()
   const getPositions = async () => {
-    const url = "https://api.dhan.co/positions";
+    const url = "https://easy-teal-salmon-belt.cyclic.app/api/positions";
     const options = {
       method: "GET",
       headers: {
@@ -19,7 +19,7 @@ function Positions() {
     const postionsResponse = await fetch(url, options);
     const positionsData = await postionsResponse.json();
     console.log(positionsData);
-    setPositions(positionsData);
+    setPositions(positionsData.data);
     setLoading(false)
   };
   useEffect(() => {
