@@ -24,7 +24,7 @@ const StockTable = ({ positions, isLoading }) => {
     }else{
       setModalValue({
         positionType:"BUY",
-        qtyValue:position?.netQty,
+        qtyValue:Math.abs(position?.netQty),
         priceValue:position.costPrice.toFixed(2)
       })
       setPositionValue(position)

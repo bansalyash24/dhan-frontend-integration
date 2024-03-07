@@ -1,7 +1,6 @@
  import { useEffect, useState } from "react";
 import StockTable from "../StockTable/StockTable";
 import { useCookies } from "react-cookie";
-import { toast } from "react-toastify";
 
 function Positions() {
   const [positions, setPositions] = useState([{}]);
